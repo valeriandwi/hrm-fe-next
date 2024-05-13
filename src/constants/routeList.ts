@@ -11,4 +11,8 @@ export const PUBLIC_ROUTES = [
     key: "candidates",
     path: "/candidates",
   },
+  {
+    key: "employees",
+    path: "/employees",
+  },
 ];
