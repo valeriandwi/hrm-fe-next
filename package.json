@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@ant-design/cssinjs": "^1.17.0",
+    "@ant-design/nextjs-registry": "^1.0.0",
     "@types/node": "20.6.5",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -17,11 +18,11 @@
     "autoprefixer": "10.4.16",
     "clsx": "^2.1.1",
     "eslint": "8.50.0",
-    "eslint-config-next": "13.5.2",
-    "next": "13.5.2",
+    "eslint-config-next": "^14.2.3",
+    "next": "^14.2.3",
     "postcss": "8.4.30",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2"
   }
