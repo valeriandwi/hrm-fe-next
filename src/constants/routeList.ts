@@ -15,4 +15,8 @@ export const PUBLIC_ROUTES = [
     key: "employees",
     path: "/employees",
   },
+  {
+    key: "calendar",
+    path: "/calendar",
+  },
 ];

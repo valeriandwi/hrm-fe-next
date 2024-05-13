@@ -44,7 +44,7 @@ const EmployeeCard: React.FC = () => {
             </Typography>
             <Typography className="items-center font-semibold">
               <PhoneOutlined className="mr-2" />
-              +62 89665999991
+              +62 89XXXXXXX
             </Typography>
           </div>
         </Card>
