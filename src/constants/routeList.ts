@@ -7,4 +7,8 @@ export const PUBLIC_ROUTES = [
     key: "jobs",
     path: "/jobs",
   },
+  {
+    key: "candidates",
+    path: "/candidates",
+  },
 ];

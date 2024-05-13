@@ -35,8 +35,10 @@ const JobCard: React.FC = () => {
               </Typography>
             </div>
             <div>
-              <Button type="ghost">
-                See Details <RightOutlined />
+              <Button type="link">
+                <div className="flex items-center gap-2">
+                  See Details <RightOutlined />
+                </div>
               </Button>
             </div>
           </div>
