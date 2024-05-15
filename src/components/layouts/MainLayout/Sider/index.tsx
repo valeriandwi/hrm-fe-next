@@ -7,7 +7,7 @@ import {
   PieChartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { PUBLIC_ROUTES } from "@/constants/routeList";
 
 const { Sider } = Layout;
@@ -32,11 +32,12 @@ const getItem = (
 
 const SiderLayout: React.FC = () => {
   const pathname = usePathname();
+  const { push } = useRouter();
 
   const getSelectedMenu = (): (string | undefined)[] => {
     if (pathname === "/") return ["dashboard"];
     const path = pathname.replace("/", "");
-    return [PUBLIC_ROUTES.filter(({ key }) => key === path)[0]["key"]] || [];
+    return [PUBLIC_ROUTES?.filter(({ key }) => key === path)[0]?.["key"]] || [];
   };
 
   const items: MenuProps["items"] = [
@@ -64,6 +65,7 @@ const SiderLayout: React.FC = () => {
       <Sider className="p-2 h-[100vh]">
         <div className="logo h-[50px]" />
         <Menu
+          onClick={(e) => push("/" + e.key)}
           theme="dark"
           selectedKeys={getSelectedMenu() as string[]}
           mode="inline"

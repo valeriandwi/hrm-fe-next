@@ -8,6 +8,10 @@ export const PUBLIC_ROUTES = [
     path: "/jobs",
   },
   {
+    key: "jobs_detail",
+    path: "/jobs/detail",
+  },
+  {
     key: "candidates",
     path: "/candidates",
   },
@@ -18,5 +22,9 @@ export const PUBLIC_ROUTES = [
   {
     key: "calendar",
     path: "/calendar",
+  },
+  {
+    key: "attendance",
+    path: "/attendance",
   },
 ];

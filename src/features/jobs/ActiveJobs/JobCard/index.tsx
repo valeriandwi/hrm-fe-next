@@ -1,5 +1,6 @@
 import { CheckCircleOutlined, RightOutlined } from "@ant-design/icons";
 import { Button, Card, Col, Divider, Row, Typography } from "antd";
+import Link from "next/link";
 import React from "react";
 
 const JobCard: React.FC = () => {
@@ -35,11 +36,13 @@ const JobCard: React.FC = () => {
               </Typography>
             </div>
             <div>
-              <Button type="link">
-                <div className="flex items-center gap-2">
-                  See Details <RightOutlined />
-                </div>
-              </Button>
+              <Link href="/jobs/detail">
+                <Button type="link">
+                  <div className="flex items-center gap-2">
+                    See Details <RightOutlined />
+                  </div>
+                </Button>
+              </Link>
             </div>
           </div>
         </Card>

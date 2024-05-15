@@ -1,5 +1,6 @@
 import { Button, Card, Divider, Table, Typography } from "antd";
 import { columns } from "./constants/column";
+import Link from "next/link";
 
 const HiringPipeline = () => {
   const dummyData = [
@@ -31,7 +32,9 @@ const HiringPipeline = () => {
     <Card>
       <div className="flex flex-row justify-between items-center">
         <Typography className="font-bold text-lg">Hiring Pipeline</Typography>
-        <Button>View All Jobs</Button>
+        <Link href="/jobs">
+          <Button>View All Jobs</Button>
+        </Link>
       </div>
       <Divider className="mb-3 mt-4" />
       <Table

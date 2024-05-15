@@ -1,9 +1,9 @@
 import Typography from "antd/es/typography/Typography";
 import React from "react";
-import AppDrawer from "../../../../components/AppDrawer";
 import CandidateProfile from "../../../Candidates/CandidateProfile";
 import useDrawer from "../../../../hooks/useDrawer";
 import TableCandidates from "../../../Candidates/Table";
+import AppDrawer from "@/components/shared/AppDrawer";
 
 const Candidates: React.FC = () => {
   const [{ openDrawer }, toggleDrawer] = useDrawer();
