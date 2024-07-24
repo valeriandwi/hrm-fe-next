@@ -27,11 +27,10 @@ const HiringStep: React.FC<HiringStepProps> = ({ currentStep = 1 }) => {
         items={hiringProcess.map((process) => ({ title: process }))}
       />
       <div className="flex justify-end mt-4">
-        <Button className="mr-2" type="primary" danger>
-          <CloseOutlined /> Decline
+        <Button className="mr-2" type="primary" danger icon={<CloseOutlined />}>
+          Decline
         </Button>
-        <Button type="primary">
-          <RightOutlined />
+        <Button type="primary" icon={<RightOutlined />}>
           Move to Next Step
         </Button>
       </div>

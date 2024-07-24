@@ -39,8 +39,7 @@ const JobDetail: React.FC = () => {
           </Typography>
         </div>
         <div>
-          <Button danger type="primary">
-            <EyeInvisibleOutlined />
+          <Button danger type="primary" icon={<EyeInvisibleOutlined />}>
             Unpublish
           </Button>
         </div>

@@ -19,7 +19,7 @@ const HiringNotes: React.FC = () => {
         <Typography className="font-bold">Notes</Typography>
       </div>
       <Divider className="!mt-2" />
-      <div className="pb-4">
+      <div className="pb-4 px-8">
         <List
           itemLayout="horizontal"
           dataSource={data}

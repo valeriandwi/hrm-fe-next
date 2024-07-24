@@ -12,21 +12,19 @@ const JobCard: React.FC = () => {
             DEVELOPMENT
           </Typography>
           <Typography className="font-semibold">Product Manager</Typography>
-          <div className="my-2 p-4 bg-gray-100 rounded-sm">
-            <Row>
-              <Col span={12}>
-                <Typography className="font-semibold text-gray-400">
-                  TOTAL
-                </Typography>
-                <Typography className="font-bold text-lg">10</Typography>
-              </Col>
-              <Col span={12} className="border-x-red-color border-x-2">
-                <Typography className="font-semibold text-gray-400">
-                  NEW
-                </Typography>
-                <Typography className="font-bold text-lg">10</Typography>
-              </Col>
-            </Row>
+          <div className="my-2 p-4 bg-gray-100 rounded-sm flex w-full space-x-4">
+            <div className="w-full border-r-2 border-gray-200">
+              <Typography className="font-semibold text-gray-400">
+                TOTAL
+              </Typography>
+              <Typography className="font-bold text-lg">10</Typography>
+            </div>
+            <div className="w-full">
+              <Typography className="font-semibold text-gray-400">
+                NEW
+              </Typography>
+              <Typography className="font-bold text-lg">10</Typography>
+            </div>
           </div>
           <Divider />
           <div className="flex flex-row justify-between items-center">

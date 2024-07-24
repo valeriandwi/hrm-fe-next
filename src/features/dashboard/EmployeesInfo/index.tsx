@@ -4,13 +4,12 @@ import Link from "next/link";
 const EmployeesInfo = () => {
   return (
     <Card>
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center mb-8">
         <Typography className="font-bold text-lg">Employees</Typography>
         <Link href="/employees">
           <Button>View All Employee</Button>
         </Link>
       </div>
-      <Divider className="mb-3 mt-4" />
       <Card className="my-2 bg-gray-100">
         <div className="flex flex-row justify-between items-center">
           <div>

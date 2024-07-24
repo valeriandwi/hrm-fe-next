@@ -57,16 +57,9 @@ const CandidateProfile: React.FC = () => {
             </div>
           </div>
           <div className="flex space-x-2">
-            <Button>
-              <LeftOutlined />
-            </Button>
-            <Button>
-              <RightOutlined />
-            </Button>
-            <Button>
-              <MailOutlined />
-              Send Email
-            </Button>
+            <Button icon={<LeftOutlined />} />
+            <Button icon={<RightOutlined />} />
+            <Button icon={<MailOutlined />}>Send Email</Button>
           </div>
         </div>
       </div>

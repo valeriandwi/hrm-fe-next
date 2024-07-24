@@ -12,10 +12,10 @@ const DashboardPage = () => {
     <MainLayout>
       <Title level={2}>Dashboard</Title>
       <Row gutter={16}>
-        <Col span={16}>
+        <Col lg={16} md={16}>
           <HiringPipeline />
         </Col>
-        <Col span={8}>
+        <Col lg={8} md={16}>
           <EmployeesInfo />
         </Col>
       </Row>

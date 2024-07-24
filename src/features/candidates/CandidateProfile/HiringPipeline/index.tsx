@@ -5,7 +5,7 @@ import HiringNotes from "./HiringNotes";
 
 const HiringPipeline: React.FC = () => {
   return (
-    <div>
+    <div className="flex flex-col space-y-4">
       <HiringStep currentStep={1} />
       <HiringDetail />
       <HiringNotes />

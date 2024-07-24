@@ -9,6 +9,7 @@ import {
 } from "@ant-design/icons";
 import { usePathname, useRouter } from "next/navigation";
 import { PUBLIC_ROUTES } from "@/constants/routeList";
+import Logo from "../../../../assets/logo";
 
 const { Sider } = Layout;
 
@@ -61,19 +62,17 @@ const SiderLayout: React.FC = () => {
   ];
 
   return (
-    <div>
-      <Sider className="p-2 h-[100vh]">
-        <div className="logo h-[50px]" />
-        <Menu
-          onClick={(e) => push("/" + e.key)}
-          theme="dark"
-          selectedKeys={getSelectedMenu() as string[]}
-          mode="inline"
-          className="flex flex-col"
-          items={items}
-        />
-      </Sider>
-    </div>
+    <Sider className="p-2 min-h-[100vh] bg-[#1c212d]">
+      <Logo className="mb-4 p-4" />
+      <Menu
+        onClick={(e) => push("/" + e.key)}
+        theme="dark"
+        selectedKeys={getSelectedMenu() as string[]}
+        mode="inline"
+        className="flex flex-col"
+        items={items}
+      />
+    </Sider>
   );
 };
 

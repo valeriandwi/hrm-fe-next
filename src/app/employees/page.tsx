@@ -11,13 +11,13 @@ const Employees: React.FC = () => {
     <MainLayout>
       <Title level={2}>Employees</Title>
       <Row gutter={24}>
-        <Col span={8}>
+        <Col span={6}>
           <EmployeeCard />
         </Col>
-        <Col span={8}>
+        <Col span={6}>
           <EmployeeCard />
         </Col>
-        <Col span={8}>
+        <Col span={6}>
           <EmployeeCard />
         </Col>
       </Row>

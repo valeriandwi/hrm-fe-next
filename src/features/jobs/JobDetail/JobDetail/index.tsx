@@ -14,10 +14,14 @@ const JobDetails: React.FC = () => {
   return (
     <div className="flex flex-col space-y-2">
       <div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-4">
           <Typography className="font-semibold">Job Description</Typography>
-          <Button type="text" onClick={() => setIsEdit(true)}>
-            <EditOutlined /> Edit
+          <Button
+            type="text"
+            onClick={() => setIsEdit(true)}
+            icon={<EditOutlined />}
+          >
+            Edit
           </Button>
         </div>
         <Typography className="text-justify">

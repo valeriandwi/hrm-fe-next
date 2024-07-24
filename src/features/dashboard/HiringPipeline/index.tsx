@@ -30,15 +30,14 @@ const HiringPipeline = () => {
 
   return (
     <Card>
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center mb-8">
         <Typography className="font-bold text-lg">Hiring Pipeline</Typography>
         <Link href="/jobs">
           <Button>View All Jobs</Button>
         </Link>
       </div>
-      <Divider className="mb-3 mt-4" />
       <Table
-        className="pointer-events-none"
+        className="pointer-events-none overflow-auto"
         pagination={false}
         size="small"
         columns={columns}

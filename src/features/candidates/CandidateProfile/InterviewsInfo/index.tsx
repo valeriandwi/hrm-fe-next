@@ -13,11 +13,11 @@ const InterviewsInfo: React.FC = () => {
       <div className="flex justify-between">
         <Typography className="font-bold mb-4">Interview List</Typography>
         <Button
-          type="ghost"
+          type="link"
           className="text-green-500"
           onClick={() => toggleModal()}
+          icon={<PlusCircleOutlined />}
         >
-          <PlusCircleOutlined />
           Add Interview Schedule
         </Button>
       </div>

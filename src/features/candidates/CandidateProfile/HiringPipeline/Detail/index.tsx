@@ -8,7 +8,7 @@ const HiringDetail: React.FC = () => {
         <Typography className="font-bold">Detail</Typography>
       </div>
       <Divider className="!mt-2" />
-      <div className="px-4 pb-4">
+      <div className="px-8 pb-4">
         <Row gutter={[12, 12]}>
           <Col span={12}>
             <div className="mb-2">

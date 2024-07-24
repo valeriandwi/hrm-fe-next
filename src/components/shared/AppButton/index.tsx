@@ -24,7 +24,7 @@ const AppButton: React.FC<AppButtonProps & ButtonProps> = ({
       className={clsx(
         "my-[10px] text-xs leading-4 rounded-md font-semibold border-primary-50-color",
         type === "primary"
-          ? "bg-primary-50-color text-white-color hover:text-primary-50-color hover:bg-white-color hover:border-primary-50-color"
+          ? "bg-color-primary-700 text-white-color hover:bg-color-primary-500 hover:border-color-primary-500"
           : "bg-white-color text-primary-50-color hover:bg-white-color hover:text-primary-50-color hover:border-primary-50-color",
         className
       )}
