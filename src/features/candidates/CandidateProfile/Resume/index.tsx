@@ -27,25 +27,29 @@ const Resume: React.FC = () => {
     setPageNumber((prevState) => prevState - 1);
   };
 
+  const options = React.useMemo(
+    () => ({
+      cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
+      cMapPacked: true,
+    }),
+    []
+  );
+
   return (
     <div>
       <div className="flex justify-end space-x-2">
         {pageNumber !== 1 && (
-          <Button icon={<LeftOutlined onClick={onPrevPage} />} />
+          <Button icon={<LeftOutlined />} onClick={onPrevPage} />
         )}
         {pageNumber !== numPages && (
-          <Button icon={<RightOutlined onClick={onNextPage} />} />
+          <Button icon={<RightOutlined />} onClick={onNextPage} />
         )}
       </div>
       <div className="flex justify-center">
         <Document
-          className={""}
-          file={"../Personal Project.pdf"}
+          file={"../resume.pdf"}
           onLoadSuccess={onDocumentLoadSuccess}
-          options={{
-            cMapUrl: `https://unpkg.com/pdfjs-dist@${pdfjs.version}/cmaps/`,
-            cMapPacked: true,
-          }}
+          options={options}
         >
           <Page pageNumber={pageNumber} height={900} />
         </Document>

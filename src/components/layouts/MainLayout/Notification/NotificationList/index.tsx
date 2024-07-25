@@ -1,10 +1,15 @@
-import { List, Typography } from "antd";
+import { Button, List, Typography } from "antd";
 import React from "react";
 
 const NotificationList: React.FC = () => {
   return (
     <div className="p-4">
-      <Typography className="font-bold text-xl mb-8">Notifications</Typography>
+      <div className="flex justify-between">
+        <Typography className="font-bold text-xl mb-8">
+          Notifications
+        </Typography>
+        <Button type="link">Clear All Notifications</Button>
+      </div>
       <div className="mb-4">
         <Typography className="font-bold text-lg mb-1">Today</Typography>
         <List

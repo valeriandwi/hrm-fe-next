@@ -7,7 +7,7 @@ const JobCard: React.FC = () => {
   return (
     <Row>
       <Col span={6}>
-        <Card className="!border-t-2 !border-t-green-500">
+        <Card className="!border-t-4 !border-t-green-500">
           <Typography className="text-gray-400 font-semibold">
             DEVELOPMENT
           </Typography>

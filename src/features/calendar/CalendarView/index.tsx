@@ -6,6 +6,7 @@ import useDrawer from "@/hooks/useDrawer";
 import AppDrawer from "@/components/shared/AppDrawer";
 import { EventClickArg } from "@fullcalendar/core/index.js";
 import EventInformation from "../EventInformation";
+import "./index.scss";
 
 const CalendarView = () => {
   const [{ openDrawer }, toggleDrawer] = useDrawer();
@@ -32,14 +33,14 @@ const CalendarView = () => {
         ]}
         viewClassNames={"bg-white"}
         eventClassNames={"bg-white border-1 pl-2 border-l-4"}
-        eventTextColor="black"
+        themeSystem="bootstrap5"
         dateClick={handleDateClick}
         eventClick={handleEventClick}
       />
       <AppDrawer
         open={openDrawer}
         placement="right"
-        size="large"
+        size="default"
         onClose={toggleDrawer}
         bodyStyle={{ padding: "0px" }}
       >

@@ -23,6 +23,8 @@ const TableCandidates: React.FC<TableCandidatesProps> = ({ toggleDrawer }) => {
     <Table
       columns={COLUMNS}
       dataSource={dummyData}
+      rowHoverable
+      rowClassName={"hover:cursor-pointer"}
       onRow={(record, rowIndex) => {
         return {
           onClick: (event) => {

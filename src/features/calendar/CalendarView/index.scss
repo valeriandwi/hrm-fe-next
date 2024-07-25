@@ -1,0 +1,14 @@
+.fc .fc-col-header-cell-cushion {
+  color: #000 !important;
+}
+
+.fc-daygrid-day-number {
+  color: #000 !important;
+}
+
+.fc .fc-daygrid-day-frame {
+  cursor: pointer;
+  &:hover {
+    background-color: #f3f8fd;
+  }
+}

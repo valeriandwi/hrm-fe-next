@@ -21,9 +21,9 @@ export const columns: ColumnsType<any> = [
     title: "New Applied",
     dataIndex: "newApplied",
     key: "newApplied",
-    className: "bg-[#97B4B1] !text-center",
+    className: "!text-center",
     render: (value: any) => (
-      <div>
+      <div className="bg-[#97B4B1] !p-2 rounded-lg">
         <Typography className="text-white-color">{value} candidates</Typography>
       </div>
     ),
@@ -32,9 +32,9 @@ export const columns: ColumnsType<any> = [
     title: "Screening",
     dataIndex: "screening",
     key: "screening",
-    className: "bg-[#3E726F] !text-center",
+    className: "!text-center",
     render: (value: any) => (
-      <div>
+      <div className="bg-[#3E726F] !p-2 rounded-lg">
         <Typography className="text-white-color">{value} candidates</Typography>
       </div>
     ),
@@ -43,9 +43,9 @@ export const columns: ColumnsType<any> = [
     title: "Interview",
     dataIndex: "interview",
     key: "interview",
-    className: "bg-[#FB8E02] !text-center",
+    className: "!text-center",
     render: (value: any) => (
-      <div>
+      <div className="bg-[#FB8E02] !p-2 rounded-lg">
         <Typography className="text-white-color">{value} candidates</Typography>
       </div>
     ),
@@ -54,9 +54,9 @@ export const columns: ColumnsType<any> = [
     title: "Test",
     dataIndex: "test",
     key: "test",
-    className: "bg-[#C579CE] !text-center",
+    className: "!text-center",
     render: (value: any) => (
-      <div>
+      <div className="bg-[#C579CE] !p-2 rounded-lg">
         <Typography className="text-white-color">{value} candidates</Typography>
       </div>
     ),
@@ -65,9 +65,9 @@ export const columns: ColumnsType<any> = [
     title: "Hired",
     dataIndex: "hired",
     key: "hired",
-    className: "bg-[#A6C78D] !text-center",
+    className: "!text-center",
     render: (value: any) => (
-      <div>
+      <div className="bg-[#A6C78D] !p-2 rounded-lg">
         <Typography className="text-white-color">{value} candidates</Typography>
       </div>
     ),

@@ -31,10 +31,12 @@ const EventInformation = () => {
       <Divider />
       <div className="px-4">
         <InterviewLink />
+        <Typography className="font-bold my-2">Candidate</Typography>
         <CandidateAvatar />
-        <Divider />
+        <Divider className="!my-2" />
+        <Typography className="font-bold my-2">Hiring Team</Typography>
         <HiringTeam />
-        <Divider />
+        <Divider className="!my-2" />
         <div>
           <Typography className="!font-bold">Instructions</Typography>
           <Typography>Lorem ipsum dolor sit amet</Typography>

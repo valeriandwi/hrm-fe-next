@@ -16,7 +16,7 @@ export const THEME_COMPONENT: OverrideToken = {
   Tabs: {
     colorBgContainer: COLORS["color-primary-500"],
     colorPrimary: COLORS["color-primary-500"],
-    colorText: COLORS["color-primary-300"],
+    colorText: COLORS["color-primary-500"],
     colorPrimaryHover: COLORS["color-primary-400"],
   },
   Menu: {
