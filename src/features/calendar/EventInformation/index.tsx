@@ -1,4 +1,9 @@
-import { CalendarOutlined, ClockCircleOutlined } from "@ant-design/icons";
+import {
+  CalendarOutlined,
+  ClockCircleOutlined,
+  InfoCircleFilled,
+  InfoOutlined,
+} from "@ant-design/icons";
 import { Button, Divider, Typography } from "antd";
 import React from "react";
 import CandidateAvatar from "./CandidateAvatar";
@@ -43,7 +48,11 @@ const EventInformation = () => {
         </div>
         <Divider />
         <div className="flex justify-end">
-          <Button className="!bg-green-600 !text-white" size="large">
+          <Button
+            className="!bg-green-600 !text-white"
+            size="large"
+            icon={<InfoCircleFilled />}
+          >
             Remind Candidate
           </Button>
         </div>

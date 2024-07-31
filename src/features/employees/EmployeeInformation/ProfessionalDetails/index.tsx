@@ -12,24 +12,22 @@ const ProfessionalDetails: React.FC = () => {
         <Row gutter={[12, 12]}>
           <Col span={12}>
             <div className="mb-2">
-              <Typography className="text-gray-500">
-                Current Job Title
-              </Typography>
+              <Typography className="text-gray-500">Job Title</Typography>
               <Typography className="font-bold">Business Analysis</Typography>
             </div>
             <div className="mb-2">
-              <Typography className="text-gray-500">Excepted Salary</Typography>
+              <Typography className="text-gray-500">Salary</Typography>
               <Typography className="font-bold">$5,000</Typography>
             </div>
             <div className="mb-2">
-              <Typography className="text-gray-500">Year Experience</Typography>
+              <Typography className="text-gray-500">
+                Year of Experience
+              </Typography>
               <Typography className="font-bold">7 years</Typography>
             </div>
             <div className="mb-2">
-              <Typography className="text-gray-500">Additional Info</Typography>
-              <Typography className="font-bold">
-                Highly knowledgeable about the company's business
-              </Typography>
+              <Typography className="text-gray-500">Date Joined</Typography>
+              <Typography className="font-bold">20 October 2023</Typography>
             </div>
           </Col>
           <Col span={12}>

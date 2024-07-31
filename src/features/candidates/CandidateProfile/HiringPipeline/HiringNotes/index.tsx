@@ -14,7 +14,7 @@ const HiringNotes: React.FC = () => {
   ];
 
   return (
-    <Card bodyStyle={{ padding: 0 }}>
+    <Card style={{ padding: 0 }}>
       <div className="flex justify-between p-4">
         <Typography className="font-bold">Notes</Typography>
       </div>

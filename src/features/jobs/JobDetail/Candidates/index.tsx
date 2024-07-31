@@ -19,7 +19,7 @@ const Candidates: React.FC = () => {
         placement="right"
         size="large"
         onClose={toggleDrawer}
-        bodyStyle={{ padding: "0px" }}
+        style={{ padding: "0px" }}
       >
         <CandidateProfile />
       </AppDrawer>

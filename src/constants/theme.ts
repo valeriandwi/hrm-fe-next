@@ -26,6 +26,9 @@ export const THEME_COMPONENT: OverrideToken = {
     itemHoverColor: "#fff",
     horizontalItemSelectedColor: "#fff",
   },
+  Pagination: {
+    colorPrimary: COLORS["color-primary-500"],
+  },
 };
 export const THEME = {
   token: THEME_TOKEN,

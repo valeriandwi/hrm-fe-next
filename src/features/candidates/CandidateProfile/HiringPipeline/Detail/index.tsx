@@ -3,7 +3,7 @@ import React from "react";
 
 const HiringDetail: React.FC = () => {
   return (
-    <Card bodyStyle={{ padding: 0 }} className="mb-4">
+    <Card style={{ padding: 0 }} className="mb-4">
       <div className="flex justify-between p-4">
         <Typography className="font-bold">Detail</Typography>
       </div>

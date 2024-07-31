@@ -8,7 +8,7 @@ type AppDrawerProps = {
   open: boolean;
   size?: "default" | "large";
   children: React.ReactNode;
-  bodyStyle?: React.CSSProperties;
+  style?: React.CSSProperties;
 };
 
 const AppDrawer: React.FC<AppDrawerProps> = ({
@@ -18,7 +18,7 @@ const AppDrawer: React.FC<AppDrawerProps> = ({
   open,
   children,
   size = "default",
-  bodyStyle,
+  style,
 }) => {
   return (
     <Drawer
@@ -29,7 +29,7 @@ const AppDrawer: React.FC<AppDrawerProps> = ({
       open={open}
       key={placement}
       size={size}
-      bodyStyle={bodyStyle}
+      style={style}
     >
       {children}
     </Drawer>

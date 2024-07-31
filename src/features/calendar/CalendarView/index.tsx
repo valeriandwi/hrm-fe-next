@@ -42,7 +42,7 @@ const CalendarView = () => {
         placement="right"
         size="default"
         onClose={toggleDrawer}
-        bodyStyle={{ padding: "0px" }}
+        style={{ padding: "0px" }}
       >
         <EventInformation />
       </AppDrawer>

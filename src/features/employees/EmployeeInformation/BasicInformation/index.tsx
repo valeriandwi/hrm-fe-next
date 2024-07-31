@@ -39,6 +39,10 @@ const BasicInformation: React.FC = () => {
               <Typography className="text-gray-500">Phone</Typography>
               <Typography className="font-bold">+62 8123456789</Typography>
             </div>
+            <div className="mb-2">
+              <Typography className="text-gray-500">Birth Date</Typography>
+              <Typography className="font-bold">27 February 1997</Typography>
+            </div>
           </Col>
         </Row>
       </div>

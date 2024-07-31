@@ -22,9 +22,9 @@ export const columns = [
                 <div className="flex space-x-1 w-full">
                     {[1,2,3,4,5].map(number => {
                         if(number > value.number){
-                            return <div className="bg-gray-200 w-full"/>
+                            return <div key={number} className="bg-gray-200 w-full"/>
                         }
-                        return <div className="bg-green-800 text-white w-full text-center">{number}</div>
+                        return <div key={number} className="bg-green-800 text-white w-full text-center">{number}</div>
                     })}
                 </div>
             </>
