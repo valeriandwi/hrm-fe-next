@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { Layout, Menu, MenuProps, Typography } from "antd";
+import { Layout, Menu, MenuProps } from "antd";
 import {
   CalendarOutlined,
   DashboardOutlined,
@@ -38,7 +39,10 @@ const SiderLayout: React.FC = () => {
   const getSelectedMenu = (): (string | undefined)[] => {
     if (pathname === "/") return ["dashboard"];
     const path = pathname.replace("/", "");
-    return [PUBLIC_ROUTES?.filter(({ key }) => key === path)[0]?.["key"]] || [];
+    const parentPath = path.split("/")[0];
+    return (
+      [PUBLIC_ROUTES?.filter(({ key }) => key === parentPath)[0]?.["key"]] || []
+    );
   };
 
   const items: MenuProps["items"] = [

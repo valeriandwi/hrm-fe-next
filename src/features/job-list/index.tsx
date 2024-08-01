@@ -1,5 +1,5 @@
 import Logo from "@/assets/logo";
-import { Card, Table, Typography } from "antd";
+import { Card, Typography } from "antd";
 import React from "react";
 import JobListTable from "./JobListTable";
 

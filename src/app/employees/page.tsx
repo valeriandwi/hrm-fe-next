@@ -15,17 +15,20 @@ const Employees: React.FC = () => {
   return (
     <MainLayout>
       <Title level={2}>Employees</Title>
-      <Row gutter={24}>
-        <Col span={6}>
+      <div className="flex justify-end">
+        
+      </div>
+      <div className="grid grid-cols-3 gap-4">
+        <div>
           <EmployeeCard toggleDrawer={toggleDrawer} />
-        </Col>
-        <Col span={6}>
+        </div>
+        <div>
           <EmployeeCard toggleDrawer={toggleDrawer} />
-        </Col>
-        <Col span={6}>
+        </div>
+        <div>
           <EmployeeCard toggleDrawer={toggleDrawer} />
-        </Col>
-      </Row>
+        </div>
+      </div>
       <AppDrawer
         open={openDrawer}
         placement="right"

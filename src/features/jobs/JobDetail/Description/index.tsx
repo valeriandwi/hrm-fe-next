@@ -1,12 +1,9 @@
-import { Button, Typography } from "antd";
+import { Typography } from "antd";
 import React from "react";
 
 const JobDescription = () => {
   return (
-    <div className="p-6">
-      <Typography className="font-bold text-2xl mb-8">
-        Frontend Web Developer
-      </Typography>
+    <>
       <div className="flex flex-col space-y-3">
         <div className="grid grid-cols-3">
           <div className="space-y-1">
@@ -105,16 +102,8 @@ const JobDescription = () => {
             </ul>
           </Typography>
         </div>
-        <div className="flex justify-center space-x-2">
-          <Button danger type="primary" size="large">
-            Cancel
-          </Button>
-          <Button type="primary" size="large">
-            Apply
-          </Button>
-        </div>
       </div>
-    </div>
+    </>
   );
 };
 

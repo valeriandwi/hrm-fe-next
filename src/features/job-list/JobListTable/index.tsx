@@ -37,7 +37,7 @@ const JobListTable = () => {
     { key: "lastUpdated", title: "Last Updated", dataIndex: "lastUpdated" },
     {
       key: "action",
-      title: "",
+      dataIndex: "action",
       render: (value: any) => (
         <Button type="primary" size="large">
           Apply

@@ -1,3 +1,4 @@
+"use client";
 import { Avatar, Layout } from "antd";
 import React from "react";
 import SiderLayout from "./Sider";

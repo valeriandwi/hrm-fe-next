@@ -29,7 +29,9 @@ const AppDrawer: React.FC<AppDrawerProps> = ({
       open={open}
       key={placement}
       size={size}
-      style={style}
+      styles={{
+        body: style,
+      }}
     >
       {children}
     </Drawer>
