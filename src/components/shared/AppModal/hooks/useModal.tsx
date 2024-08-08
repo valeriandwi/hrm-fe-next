@@ -50,7 +50,7 @@ const useModal = (): TModal => {
     dialogProps,
     modalConfig
   ) => {
-    const dialogModal = Modal.info(null);
+    const dialogModal = Modal.info({});
 
     const DEFAULT_CONFIG: ModalFuncProps = {
       closable: false,
@@ -81,7 +81,7 @@ const useModal = (): TModal => {
             destroy={() => confirmationDialogModal?.destroy()}
             onCancel={dialogFunc?.onCancel}
             onOk={dialogFunc?.onOk}
-            footer={null}
+            footer={null as any}
             {...modalConfig}
           />
         ),

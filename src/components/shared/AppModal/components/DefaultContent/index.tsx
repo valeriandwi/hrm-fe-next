@@ -28,12 +28,12 @@ const DefaultContent: React.FC<DefaultContentProps> = ({
 }) => {
   const onClickCancel = () => {
     if (onCancel) onCancel();
-    destroy();
+    if (destroy) destroy();
   };
 
   const onClickOk = () => {
     if (onOk) onOk();
-    destroy();
+    if (destroy) destroy();
   };
 
   return (

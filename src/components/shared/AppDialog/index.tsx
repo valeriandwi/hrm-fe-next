@@ -21,7 +21,7 @@ const AppDialog: React.FC<AppDialogProps> = ({
   confirmButton = true,
   modal,
 }) => {
-  const onDestroyModal = () => modal.destroy();
+  const onDestroyModal = () => modal?.destroy();
 
   return (
     <div className="flex flex-col justify-center items-center py-5">

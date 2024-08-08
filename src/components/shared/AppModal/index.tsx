@@ -57,7 +57,7 @@ const AppModal: React.FC<AppModalProps> & { useModal: typeof useModal } = ({
       {...rest}
     >
       {useCustomizedModalHeader ? (
-        <ModalHeader modal={modal} label={title} />
+        <ModalHeader modal={modal} label={title || ""} />
       ) : null}
       {childComponents}
     </Modal>
