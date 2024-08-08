@@ -17,7 +17,11 @@ const ScheduleItem: React.FC<ScheduleItemProps> = () => {
             Interview with John Doe
           </Typography>
         </div>
-        <Button size="small" icon={<CheckOutlined />} />
+        <Button
+          size="small"
+          icon={<CheckOutlined />}
+          className="hover:bg-color-primary-100"
+        />
       </div>
     </div>
   );

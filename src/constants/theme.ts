@@ -6,7 +6,7 @@ export const THEME_TOKEN: Partial<AliasToken> = {};
 export const THEME_COMPONENT: OverrideToken = {
   Button: {
     colorPrimary: COLORS["color-primary-500"],
-    colorPrimaryHover: COLORS["color-primary-500"],
+    colorPrimaryHover: COLORS["color-primary-600"],
     colorPrimaryActive: COLORS["color-primary-500"],
     colorPrimaryBg: COLORS["color-primary-900"],
     colorBorder: COLORS["color-primary-500"],
@@ -28,6 +28,10 @@ export const THEME_COMPONENT: OverrideToken = {
   },
   Pagination: {
     colorPrimary: COLORS["color-primary-500"],
+  },
+  Input: {
+    hoverBorderColor: COLORS["color-primary-500"],
+    activeBorderColor: COLORS["color-primary-500"],
   },
 };
 export const THEME = {

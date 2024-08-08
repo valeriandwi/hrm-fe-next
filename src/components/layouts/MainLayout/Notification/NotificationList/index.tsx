@@ -8,7 +8,9 @@ const NotificationList: React.FC = () => {
         <Typography className="font-bold text-xl mb-8">
           Notifications
         </Typography>
-        <Button type="link">Clear All Notifications</Button>
+        <Button type="link" className="text-color-primary-500 hover:underline">
+          Clear All Notifications
+        </Button>
       </div>
       <div className="mb-4">
         <Typography className="font-bold text-lg mb-1">Today</Typography>

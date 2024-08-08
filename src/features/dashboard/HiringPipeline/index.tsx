@@ -32,8 +32,8 @@ const HiringPipeline = () => {
     <Card>
       <div className="flex flex-row justify-between items-center mb-8">
         <Typography className="font-bold text-lg">Hiring Pipeline</Typography>
-        <Link href="/jobs">
-          <Button>View All Jobs</Button>
+        <Link href="/jobs" className="text-color-primary-500 hover:underline">
+          View All Jobs
         </Link>
       </div>
       <Table

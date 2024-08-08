@@ -6,8 +6,11 @@ const EmployeesInfo = () => {
     <Card>
       <div className="flex flex-row justify-between items-center mb-8">
         <Typography className="font-bold text-lg">Employees</Typography>
-        <Link href="/employees">
-          <Button>View All Employee</Button>
+        <Link
+          href="/employees"
+          className="text-color-primary-500 hover:underline"
+        >
+          View All Employee
         </Link>
       </div>
       <Card className="my-2 bg-gray-100">

@@ -1,7 +1,7 @@
-import { CheckOutlined, ClockCircleOutlined } from "@ant-design/icons";
-import { Button, Card, Typography } from "antd";
+import { Card, Typography } from "antd";
 import React from "react";
 import ScheduleItem from "./ScheduleItem";
+import Link from "next/link";
 
 const Schedule: React.FC = () => {
   const dummyData = [
@@ -49,9 +49,17 @@ const Schedule: React.FC = () => {
 
   return (
     <Card>
-      <Typography className="font-bold text-xl mb-4">
-        Today Schedules
-      </Typography>
+      <div className="flex justify-between">
+        <Typography className="font-bold text-xl mb-4">
+          Today Schedules
+        </Typography>
+        <Link
+          href="/calendar"
+          className="text-color-primary-500 hover:underline"
+        >
+          View All
+        </Link>
+      </div>
       {dummyData.map(
         ({ id, startTime, endTime, taskDescription, category, status }) => (
           <ScheduleItem key={id} />
